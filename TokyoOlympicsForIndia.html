@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+    <title>Tokyo Olympics : India</title>
+    <style>
+        .d-block {
+            height:500px;
+            width:300px;
+        }
+ 
+
+        .medalists{
+          background-color: darkslateblue;
+         padding : 2px, 2px,2px,2px;
+         margin-left: 20px;
+         margin-right: 20px;
+        }
+
+
+        .card{
+          padding-top:10px;
+          margin-left: 30px;
+          margin-top:30px;
+         
+        }
+
+/**  -------------Social media Links--------**/
+.socialmediaLinks ul {
+    
+    
+   
+}
+
+
+.socialmediaLinks ul li {
+        list-style: none;
+        margin: 0 10px;
+    }
+    .socialmediaLinks ul li .fa {
+        color: #000000;
+        font-size: 25px;
+        line-height: 50px;
+        transition: .5s;
+    }
+    .socialmediaLinks ul li .fa:hover {
+          color: #ffffff;
+       
+    }
+    .socialmediaLinks ul li a {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color:rgb(134, 123, 207);
+        text-align: center;
+        transition: 0.5s;
+        transform: translate(0,0px);
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .socialmediaLinks ul li a:hover {
+        transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    }
+    .socialmediaLinks ul li:nth-child(1) a:hover {
+        background-color: #3b5999;
+    }
+    .socialmediaLinks ul li:nth-child(2) a:hover {
+        background-color: #55acee;
+    }
+    .socialmediaLinks ul li:nth-child(3) a:hover {
+        background-color: #f81cc1;
+    }
+   /******************Timeline*****************************/
+   .schedule *{
+    box-sizing: border-box;
+}
+.schedule{
+    background-color: black;
+    color: white;
+}
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*Center line*/
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    background-color: white;
+    top: 0;
+    bottom:0;
+    left: 50%;
+    margin-left: -3px;
+}
+.container{
+    padding: 10px 40px;
+    background-color: inherit;
+    color: black;
+    position: relative;
+    width: 50%;
+}
+.content{
+    padding: 10px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+}
+.left{
+    left: 0;
+}
+.right{
+    left: 50%;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 5px solid gray;
+    border-radius: 100%;
+    top: 15px;
+    z-index: 1;
+}
+.right::after{
+    left: -17px;
+}
+.left::before{
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0px 10px 10px;
+    border-color: transparent transparent transparent white;
+    
+}
+.right::before{
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 20px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0px;
+    border-color: transparent white transparent transparent;   
+}
+
+        
+
+        /** -----------Footer    --------------------------- **/
+        footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+        
+    </style>
+</head>
+<body>
+    <!--     Recent News Headlines-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        </div>
+
+
+        <div class="carousel-inner">
+
+
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="olympics/hockey.jpg" class="d-block w-100" alt="Women Hockey Team">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Women Hockey Team embarked a historic coming Olympic in coming years</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="olympics/oly.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <img src="olympics/113639-sjqoqneymv-1550807500.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <img src="olympics/images.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <img src="olympics/914966-hockey-india.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+
+
+
+          <div class="carousel-item">
+            <img src="olympics/oly2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <img src="olympics/hockey.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <img src="olympics/113639-sjqoqneymv-1550807500.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <img src="olympics/banner.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+      <!------------------------------About Winners------------------------------------------>
+
+   
+
+      <div class="medalists">
+
+             <!------------ Winner 1 : Neeraj Chopra------------------------>
+      <div class="card " style="width: 18rem;">
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202108/AP21219462944826_1200x768.jpeg?MxySq3g0tSlHuHuz.A_tzU5Tds86JwmQ&size=770:433" class="card-img-top" alt="Neeraj Chopra holding Olympic Gold Medal">
+        <div class="card-body">
+          <h5 class="card-title">Neeraj Chopra</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://en.wikipedia.org/wiki/Neeraj_Chopra" class="btn btn-primary"> Know more about India's Golden Boy</a>
+          <div class="socialmediaLinks">
+            <ul>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a> </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+
+      
+
+       <!------------ Winner 2-  Mira Bai Chanu----------------------->
+      <div class="parallax">
+       <div class="card " style="width: 18rem;">
+        <img src="https://img.onmanorama.com/content/dam/mm/en/sports/other-sports/images/2021/7/24/chanu-lift.jpg" class="card-img-top" alt="Mira Bai Chanu giving every Indian goosebumps and a chill in the nerve through her performance in Tokyo Olympics">
+        <div class="card-body">
+          <h5 class="card-title">Saikhom Mirabai Chanu</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://en.wikipedia.org/wiki/Saikhom_Mirabai_Chanu" class="btn btn-primary">Know more about India</a>
+          <div class="socialmediaLinks">
+            <ul>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a> </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+
+       <!------------ Winner 3  Ravi Kumar Dahiya------------------------>
+       <div class="card" style="width: 18rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZKebIOCzh0tLi7uoDzqQkcv0g09HoCACH-PF7dsxkXjuWqU19yvIGTZDRLQEgljf3dkk&usqp=CAU" class="card-img-top" alt="Ravi Kumar Dahiya with his Historic Silver">
+        <div class="card-body">
+          <h5 class="card-title">Ravi Kumar Dahiya</h5>
+          <p class="card-text">For Ravi Kumar Dahiya, a silver medal is a reminder of a gold lost.</p>
+          <a href="https://en.wikipedia.org/wiki/Ravi_Kumar_Dahiya" class="btn btn-primary">Go somewhere</a>
+          <div class="socialmediaLinks">
+            <ul>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a> </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+
+       <!------------ Winner 4---- PV Sindhu-------------------->
+       <div class="card" style="width: 18rem;">
+        <img src="https://images.hindustantimes.com/img/2021/08/03/550x309/20210801184L_1628010960658_1628010976721.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">P. V. Sindhu</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://en.wikipedia.org/wiki/P._V._Sindhu" class="btn btn-primary">Go somewhere</a>
+          <div class="socialmediaLinks">
+            <ul>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a> </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+
+
+       <!------------ Winner 5--  Lovlina Borgohain---------------------->
+       <div class="card" style="width: 18rem;">
+        <img src="https://thebridge.in/h-upload/2021/08/01/12600-lovlina-borgohain.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lovlina Borgohain</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://en.wikipedia.org/wiki/Lovlina_Borgohain" class="btn btn-primary">Go somewhere</a>
+          <div class="socialmediaLinks">
+            <ul>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a> </li>
+                <li> <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi56_Heo97yAhWjheYKHc92Df0QFnoECAIQAQ&url=https%3A%2F%2Ftwitter.com%2Flovlinaborgohai%3Flang%3Den&usg=AOvVaw2ToAmtZPleSwLVhHskBzS0" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a> </li>
+                <li> <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi56_Heo97yAhWjheYKHc92Df0QFnoECAMQAQ&url=https%3A%2F%2Fwww.instagram.com%2Flovlina_borgohain%2F%3Fhl%3Den&usg=AOvVaw2TeqGyjyq4EhZek5yDMEVV" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a> </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+
+       <!------------ Winner 6-- Bajrang Punia---------------------->
+       <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj78NKLpN7yAhWgILcAHR4CAwUQFnoECAQQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBajrang_Punia&usg=AOvVaw2PfHZ6aqixVHxjIMrCrKuZ" class="btn btn-primary">Go somewhere</a>
+          <div class="socialmediaLinks">
+            <ul>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a> </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+       <!------------ Winner 7----India's Men Hockey Team-------------------->
+       <div class="card" style="width: 18rem;">
+        <img src="https://www.hockeyindia.org/static-assets/waf-images/c4/02/e6/21-9/592-444/uwMr805gnY.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://en.wikipedia.org/wiki/India_men%27s_national_field_hockey_team" class="btn btn-primary">Go somewhere</a>
+          <div class="socialmediaLinks">
+            <ul>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a> </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+
+       <!------------ Winner 8-----India's Women Hockey Team-------------------->
+       <div class="card" style="width: 18rem;">
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/08/04/988826-indian-women-s-hockey-team.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://en.wikipedia.org/wiki/India_women's_national_field_hockey_team" class="btn btn-primary">Go somewhere</a>
+          <div class="socialmediaLinks">
+            <ul>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a> </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+
+
+       <!------------ Winner 9------Aditi Ashok------------------>
+       <div class="card" style="width: 18rem;">
+        <img src="https://s01.sgp1.cdn.digitaloceanspaces.com/article/162488-pdklgrmkzt-1628231447.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aditi Ashok</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjp-b_RpN7yAhVaILcAHXumD5cQFnoECAQQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAditi_Ashok&usg=AOvVaw0In6f3P7tJ71YaDz-JWXjG" class="btn btn-primary">Go somewhere</a>
+          <div class="socialmediaLinks">
+            <ul>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a> </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+
+       <!------------ Winner 10------Deepak Punia------------------>
+       <div class="card" style="width: 18rem;">
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/08/05/989078-20210805151828.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjq4LvHpd7yAhWFIbcAHRC8DUIQFnoECAIQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDeepak_Punia_(wrestler)&usg=AOvVaw18LV9QEEaEhgdBXYkOn2fT" class="btn btn-primary">Go somewhere</a>
+          <div class="socialmediaLinks">
+            <ul>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a> </li>
+                <li> <a href="" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a> </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+<!---------------------------------Message box-/timeline------>
+
+
+
+
+
+<div class="schedule" id="schedule">
+  <h1>Glance at our Historic Olympics</h1>
+  <div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h3>20 July 2021</h3>
+        <h4>Registration Ends</h4>
+      <!--  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div>
+      </div>  -->
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h3>20 July 2021</h3>
+        <h4>Registration Ends</h4>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h3>1 August 2021</h3>
+        <h4>Program Starts</h4>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h3>1 October 2021</h3>
+        <h4>Program Ends</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+
+    <!-- Footer      -->
+
+    <footer>
+      <a href="#">&copy; 2021 | Team Horizons | Sneha Agarwal| Tisha Ahuja | Snehal Rani </a>
+    </footer>
+</body>
+</html>
