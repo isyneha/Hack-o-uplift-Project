@@ -8,7 +8,7 @@ Information,Information everywhere but no authetic and complete information anyw
 
 
 
-##PROJECT OBJECTIVE:-
+# Project Objective:-
 We have  planned to make a dynamic responsive website that not only provides information to the person about various sports and events but also give them a detailed insights and review on how to choose their paths in sports of their choice.We will have a dedicated page for olympics that will convey them how sportsperson turned their hardwork,passion into the glory of the nation.It will also contain all the major records in sports that India has made till date.Apart from this,it will also have details of various psychologists that these people can approach during their presentation.
 
 Brief overview of the technology:
@@ -17,19 +17,19 @@ Front end: HTML, CSS
 
 HTML: HTML is used to create and save web document.<br>
 
-CSS : (Cascading Style Sheets) Create attractive Layout..<br>
+CSS : (Cascading Style Sheets) Create attractive Layout.<br>
 
 BOOTSTAP:Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
 
-#FUTURE ASPECTS:
+# Future Aspects:
 This project will serve not only as a source of information but also motivate and encourage our younger generation to develop their interests in sports and bring laurel to their country.
 
 # Drawbacks:
-Its only Drawback is that the website needs to be updated time to time.
+Its only Drawback is that the website needs to be updated time to time with more information.
 
-#Contributors :
+# Contributors :
         TEAM HORIZONS 
         
-1. Sneha Agarwal<br>
+1.Sneha Agarwal<br>
 2.Trisha <br>
-3. Snehal Rani
+3.Snehal Rani
